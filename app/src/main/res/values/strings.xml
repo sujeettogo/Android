@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HMS2</string>
+    <array name="marital">
+        <item>Single</item>
+        <item>Married</item>
+    </array>
+</resources>
