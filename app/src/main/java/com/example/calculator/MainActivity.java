@@ -238,7 +238,8 @@ public class MainActivity extends AppCompatActivity {
 
                     if(input.isEmpty())
                         input.push(sep[i]);
-                     else if ((input.peek().equals("X") || input.peek().equals("/")) && (sep[i].equals("+") || sep[i].equals("-"))) {
+                     else if ((input.peek().equals("x") || input.peek().equals("/")) && (sep[i].equals("+") || sep[i].equals("-")
+                    || sep[i].equals("x") || sep[i].equals("%"))) {
                         post_input.add(input.pop());
                         input.push(sep[i]);
                     }
@@ -249,8 +250,6 @@ public class MainActivity extends AppCompatActivity {
                      else {
                         input.push(sep[i]);
                     }
-
-
             }
 
             else if(sep[i].equals(")")){
